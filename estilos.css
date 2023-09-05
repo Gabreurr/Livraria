@@ -1,62 +1,67 @@
 * {
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans+JP:wght@200&display=swap');
 
 :root {
     --fonte-principal: 'Merriweather', cursive
-    
 }
 
 body {
     font-family: Merriweather;
-    background-color: #8696B1; 
-    font-size: 12px; /*mudei tamanho da fonte*/ 
+    background-color: #8696B1;
+    font-size: 12px;
+    /*mudei tamanho da fonte*/
 }
 
 header {
-    background-color: #2d4061; 
+    background-color: #2d4061;
     color: white;
-    text-align: center; 
-    padding: 2rem; /*aumentei em um*/
+    text-align: center;
+    padding: 2rem;
+    /*aumentei em um*/
 }
 
 nav ul {
-    list-style: none; 
+    list-style: none;
 }
 
 nav li {
-    display: inline; 
-    margin-right: 10px; /*diminui em 10*/
+    display: inline;
+    margin-right: 10px;
+    /*diminui em 10*/
 }
 
 nav a {
-    text-decoration: none; 
-    color: white; 
-    font-weight: bold; 
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 main {
-    padding: 25px; 
-    overflow: hidden; 
+    padding: 25px;
+    overflow: hidden;
 }
 
 .card {
-    width: calc(33.33% - 20px); /* 33.33% - 40px */
+    width: calc(33.33% - 20px);
+    /* 33.33% - 40px */
     margin: 10px;
-    padding: 20px; 
-    background-color: #fff; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-    float: left; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    float: left;
 }
 
 .card img {
-    max-width: 100%; /* Define a largura máxima da imagem */
-    height: 300px; /* Define a altura da imagem */
+    max-width: 100%;
+    /* Define a largura máxima da imagem */
+    height: 300px;
+    /* Define a altura da imagem */
 }
 
 .card button {
@@ -65,12 +70,12 @@ main {
     border: none;
     padding: 8px 16px;
     margin-top: 10px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .card button:hover {
-    background-color: red; 
+    background-color: red;
 }
 
 footer {
@@ -78,4 +83,104 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    overflow: hidden;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #777;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+}
+
+.radio-group label {
+    display: inline;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.input-check {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input-check input[type="checkbox"]+label {
+    display: inline-block;
+    font-weight: normal;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    /* Permite redimensionar verticalmente o textarea */
+    height: 120px;
+    /* Altura inicial do textarea */
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    /* Adiciona um cursor de ponteiro */
+}
+
+/* Botão de Limpar */
+button[type="reset"] {
+    background-color: #6c757d;
+}
+
+/* Botão de Enviar */
+button:hover {
+    background-color: #0056b3;
 }
