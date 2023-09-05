@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #2D4061; 
+    background-color: #2d4061; 
     color: white;
     text-align: center; 
     padding: 2rem; /*aumentei em um*/
@@ -65,12 +65,12 @@ main {
     border: none;
     padding: 8px 16px;
     margin-top: 10px;
-    cursor: pointer; /* Muda o cursor do mouse */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .card button:hover {
-    background-color: red; /* Muda a cor de fundo ao passar o mouse */
+    background-color: red; 
 }
 
 footer {
